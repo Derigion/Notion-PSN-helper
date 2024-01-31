@@ -1,1 +1,1 @@
-# Notion-PSN-helper
+# Notion-PSN-helper notion同步PlayStation数据

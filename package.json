@@ -1,0 +1,23 @@
+{
+  "name": "notion-psn-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Derigion/Notion-PSN-helper.git"
+  },
+  "author": "derigion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Derigion/Notion-PSN-helper/issues"
+  },
+  "homepage": "https://github.com/Derigion/Notion-PSN-helper#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "psn-api": "^2.10.1"
+  }
+}

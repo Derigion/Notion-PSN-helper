@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/Derigion/Notion-PSN-helper#readme",
   "dependencies": {
+    "@notionhq/client": "^2.2.14",
     "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
     "psn-api": "^2.10.1"
   }
 }

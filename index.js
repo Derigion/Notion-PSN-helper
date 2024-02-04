@@ -1,19 +1,12 @@
 const { notion, page_id } = require("./notion/notion.js");
-console.log(page_id);
+const { getPSNTitles, getPSNUser } = require("./utils/psn.js");
+const fs = require("fs");
+
 (async () => {
-  const response = await notion.pages.update({
-    page_id,
-    properties: {
-      title: {
-        title: [
-          {
-            text: {
-              content: "测试名称",
-            },
-          },
-        ],
-      },
-    },
-  });
-  console.log(response);
+  // const response = await notion.pages.update({
+  //   page_id
+  // });
+  // console.log(response);
+  const res = await getPSNTitles()
+  fs.writeFileSync('./psnData/PSNTitles.json', JSON.stringify(res))
 })();

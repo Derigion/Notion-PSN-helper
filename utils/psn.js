@@ -15,11 +15,11 @@ require("dotenv").config({
 const psnToken = process.env.PSN_TOKEN;
 
 async function getAuthorization() {
+  console.log("getCode");
   const accessCode = await exchangeNpssoForCode(psnToken);
   console.log("getAuth");
   const authorization = await exchangeCodeForAccessToken(accessCode);
-  const updatedAuthorization = await exchangeRefreshTokenForAuthTokens(authorization.refreshToken);
-  return updatedAuthorization;
+  return authorization;
 }
 
 async function getAccessToken() {
